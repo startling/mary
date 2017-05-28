@@ -1,6 +1,5 @@
 [Unit]
 Description=Mary Poppins Flask App
-After=network.target
 
 [Service]
 Type=simple
@@ -10,4 +9,4 @@ ExecStart=/usr/bin/python /home/jams/flask_mary/mary.py
 Environment=PYTHONPATH=/home/jams/bin:$PYTHONPATH
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
